@@ -18,6 +18,13 @@
             color: white;
             padding: 20px;
             font-size: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        header img {
+            width: 50px;
+            margin-right: 15px;
         }
         nav {
             background: #5a4630;
@@ -89,53 +96,46 @@
     </style>
 </head>
 <body>
-    <header>Léo Le Cam - Informatique</header>
+    <header>
+        <img src="/mnt/data/2a7388b8-8465-47f4-8f72-1c50294ec9f7.webp" alt="Logo Léo Le Cam">
+        Léo Le Cam - Informatique
+    </header>
     
     <nav>
-        <div class="dropdown">
-            <a href="#accueil">Accueil</a>
-        </div>
-        <div class="dropdown">
-            <a href="#services">Services</a>
-            <div class="dropdown-content">
-                <a href="#reparation">Réparation</a>
-                <a href="#installation">Installation</a>
-                <a href="#optimisation">Optimisation</a>
-            </div>
-        </div>
-        <div class="dropdown">
-            <a href="#competences">Compétences</a>
-        </div>
-        <div class="dropdown">
-            <a href="#contact">Contact</a>
-        </div>
+        <a href="#accueil">Accueil</a>
+        <a href="#services">Services</a>
+        <a href="#competences">Compétences</a>
+        <a href="#jeux">Jeux PC</a>
+        <a href="#contact">Contact</a>
     </nav>
     
     <section id="accueil">
         <h1>Présentation de Léo Le Cam</h1>
+        <img src="https://via.placeholder.com/600x300?text=Technicien+Informatique" alt="Technicien informatique">
         <p>💻 Technicien en Informatique à Domicile | Le Mans</p>
         <p>Passionné par l'informatique et fort d'une solide expérience, je vous propose mes services pour répondre à tous vos besoins informatiques, que ce soit à domicile, à distance ou sur site.</p>
     </section>
     
     <section id="services" class="services">
         <h1>🔧 Services Proposés</h1>
+        <img src="https://via.placeholder.com/600x300?text=Services+Informatiques" alt="Services informatiques">
         <table>
             <tr>
                 <th>Service</th>
                 <th>Description</th>
                 <th>Prix</th>
             </tr>
-            <tr id="reparation">
+            <tr>
                 <td>Réparation & Dépannage</td>
                 <td>PC, Mac, logiciels, pannes diverses</td>
                 <td>À partir de 30€</td>
             </tr>
-            <tr id="installation">
+            <tr>
                 <td>Installation & Configuration</td>
                 <td>Windows, macOS, logiciels, imprimantes</td>
                 <td>À partir de 40€</td>
             </tr>
-            <tr id="optimisation">
+            <tr>
                 <td>Maintenance & Optimisation</td>
                 <td>Amélioration des performances, nettoyage de virus</td>
                 <td>À partir de 35€</td>
@@ -143,13 +143,10 @@
         </table>
     </section>
     
-    <section id="competences">
-        <h1>💡 Compétences</h1>
-        <p>✔ Diagnostic et réparation de pannes matérielles et logicielles</p>
-        <p>✔ Installation et configuration de systèmes et logiciels</p>
-        <p>✔ Sécurisation des données et réseaux</p>
-        <p>✔ Optimisation des performances des ordinateurs</p>
-        <p>✔ Assistance et formation informatique</p>
+    <section id="jeux">
+        <h1>🎮 Informatique pour les jeux</h1>
+        <p>Installation et optimisation de jeux PC, configuration des performances et mise à jour des pilotes.</p>
+        <img src="https://via.placeholder.com/600x300?text=Gaming+PC" alt="PC Gaming">
     </section>
     
     <section id="contact">
