@@ -1,2 +1,2 @@
-# L-oLecaminformatique72
+# LéoLecaminformatique72
 LéoLecaminformatique72
