@@ -3,153 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Léo Le Cam - Informatique</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            background-color: #1a1a1a;
-            color: white;
-        }
-        header {
-            background: linear-gradient(90deg, #ff8c00, #ff4500);
-            color: white;
-            padding: 20px;
-            font-size: 28px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        header img {
-            width: 80px;
-            margin-right: 15px;
-        }
-        nav {
-            background: #333;
-            padding: 15px;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-        }
-        section {
-            padding: 50px;
-            border-bottom: 2px solid #ff8c00;
-        }
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background: #ff4500;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 20px;
-        }
-        .services table {
-            width: 80%;
-            margin: 0 auto;
-            border-collapse: collapse;
-            background: white;
-            color: black;
-        }
-        .services th, .services td {
-            border: 1px solid #ddd;
-            padding: 15px;
-        }
-        footer {
-            background: #ff4500;
-            color: white;
-            padding: 20px;
-            margin-top: 20px;
-        }
-        .gaming-section {
-            background: url('/mnt/data/2f564eb4-7c00-4cc9-b309-cd4b8dee45e5.webp') no-repeat center center/cover;
-            padding: 100px 20px;
-            color: white;
-        }
-        .social-links img {
-            width: 40px;
-            height: 40px;
-            margin: 0 10px;
-        }
-    </style>
+    <title>Accueil - Léo Le Cam</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <img src="/mnt/data/2a7388b8-8465-47f4-8f72-1c50294ec9f7.webp" alt="Logo Léo Le Cam">
-        Léo Le Cam - Informatique
+        <img src="logo.webp" alt="Logo Léo Le Cam">
+        <h1>Bienvenue chez Léo Le Cam - Informatique</h1>
     </header>
     
     <nav>
-        <a href="#accueil">Accueil</a>
-        <a href="#services">Services</a>
-        <a href="#competences">Compétences</a>
-        <a href="#jeux">Jeux PC</a>
-        <a href="#contact">Contact</a>
+        <a href="index.html">Accueil</a>
+        <a href="services.html">Services</a>
+        <a href="competences.html">Compétences</a>
+        <a href="jeux.html">Jeux PC</a>
+        <a href="contact.html">Contact</a>
     </nav>
     
-    <section id="accueil">
-        <h1>Présentation de Léo Le Cam</h1>
-        <img src="/mnt/data/2f564eb4-7c00-4cc9-b309-cd4b8dee45e5.webp" alt="Technicien informatique" width="600">
-        <p>💻 Technicien en Informatique à Domicile | Le Mans</p>
-        <p>Passionné par l'informatique et fort d'une solide expérience, je vous propose mes services pour répondre à tous vos besoins informatiques.</p>
+    <section>
+        <h2>À propos</h2>
+        <p>Expert en informatique, je propose des services de réparation, installation et optimisation.</p>
     </section>
-    
-    <section id="services" class="services">
-        <h1>🔧 Services Proposés</h1>
-        <table>
-            <tr>
-                <th>Service</th>
-                <th>Description</th>
-                <th>Prix</th>
-            </tr>
-            <tr>
-                <td>Réparation & Dépannage</td>
-                <td>PC, Mac, logiciels, pannes diverses</td>
-                <td>À partir de 30€</td>
-            </tr>
-            <tr>
-                <td>Installation & Configuration</td>
-                <td>Windows, macOS, logiciels, imprimantes</td>
-                <td>À partir de 40€</td>
-            </tr>
-        </table>
-        <a class="btn" href="https://paypal.me" target="_blank">Réserver et Payer</a>
-    </section>
-    
-    <section id="jeux" class="gaming-section">
-        <h1>🎮 Informatique pour les jeux</h1>
-        <p>Installation et optimisation de jeux PC, configuration des performances et mise à jour des pilotes.</p>
-        <img src="/mnt/data/2f564eb4-7c00-4cc9-b309-cd4b8dee45e5.webp" alt="PC Gaming" width="600">
-    </section>
-    
-    <section id="contact">
-        <h1>📞 Contact</h1>
-        <p>✉ Email : leo.informatique.pro72@gmail.com</p>
-        <p>📞 Téléphone : 06 17 70 95 91</p>
-        <p>📅 Disponibilités : Sur rendez-vous</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26885.05845113982!2d0.1910119!3d48.0061106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e286a2eac7aaf7%3A0x40dc8d5f58853a0!2sLe%20Mans!5e0!3m2!1sfr!2sfr!4v1648572905985!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        <form action="mailto:leo.informatique.pro72@gmail.com" method="post" enctype="text/plain">
-            <input type="text" name="name" placeholder="Votre nom" required><br>
-            <input type="email" name="email" placeholder="Votre email" required><br>
-            <textarea name="message" placeholder="Votre message" required></textarea><br>
-            <button type="submit">Envoyer</button>
-        </form>
-    </section>
-    
+
     <footer>
-        <div class="social-links">
-            <a href="#"><img src="https://via.placeholder.com/40" alt="Facebook"></a>
-            <a href="#"><img src="https://via.placeholder.com/40" alt="Twitter"></a>
-            <a href="#"><img src="https://via.placeholder.com/40" alt="LinkedIn"></a>
-        </div>
-        &copy; 2024 Léo Le Cam - Informatique - Tous droits réservés
+        <p>&copy; 2024 Léo Le Cam - Informatique</p>
     </footer>
 </body>
 </html>

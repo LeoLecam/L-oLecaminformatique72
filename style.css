@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #1a1a1a;
+    color: white;
+}
+header {
+    background: linear-gradient(90deg, #ff8c00, #ff4500);
+    padding: 20px;
+    font-size: 24px;
+}
+section {
+    padding: 50px;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ff4500;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+footer {
+    background: #ff4500;
+    padding: 20px;
+    margin-top: 20px;
+}
