@@ -22,12 +22,30 @@
         nav {
             background: #5a4630;
             padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
         }
-        nav a {
-            color: white;
-            margin: 0 15px;
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
             text-decoration: none;
-            font-size: 18px;
+            display: block;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
         }
         section {
             padding: 50px;
@@ -69,13 +87,25 @@
     <header>Léo Le Cam - Informatique</header>
     
     <nav>
-        <a href="#accueil">Accueil</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
+        <div class="dropdown">
+            <a href="#accueil">Accueil</a>
+        </div>
+        <div class="dropdown">
+            <a href="#services">Services</a>
+            <div class="dropdown-content">
+                <a href="#reparation">Réparation</a>
+                <a href="#installation">Installation</a>
+                <a href="#optimisation">Optimisation</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#contact">Contact</a>
+        </div>
     </nav>
     
     <section id="accueil">
-        <h1>Technicien en Informatique à Domicile | Le Mans</h1>
+        <h1>Présentation de Léo Le Cam</h1>
+        <p>💻 Technicien en Informatique à Domicile | Le Mans</p>
         <p>🔧 Réparation, dépannage & maintenance informatique</p>
         <p>🔒 Sécurisation de vos données et réseaux</p>
         <p>📍 Le Mans, France</p>
@@ -90,17 +120,17 @@
                 <th>Description</th>
                 <th>Prix</th>
             </tr>
-            <tr>
+            <tr id="reparation">
                 <td>Réparation d'ordinateur</td>
                 <td>Dépannage matériel et logiciel</td>
                 <td>À partir de 50€</td>
             </tr>
-            <tr>
+            <tr id="installation">
                 <td>Installation & Configuration</td>
                 <td>Windows, logiciels, périphériques</td>
                 <td>À partir de 40€</td>
             </tr>
-            <tr>
+            <tr id="optimisation">
                 <td>Optimisation et Sécurisation</td>
                 <td>Protection antivirus, nettoyage</td>
                 <td>À partir de 30€</td>
