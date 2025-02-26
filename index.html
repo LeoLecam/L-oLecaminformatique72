@@ -10,11 +10,11 @@
             margin: 0;
             padding: 0;
             text-align: center;
-            background-color: #fdf3e7;
-            color: #5a4630;
+            background-color: #1a1a1a;
+            color: white;
         }
         header {
-            background: #8B5A2B;
+            background: linear-gradient(90deg, #ff8c00, #ff4500);
             color: white;
             padding: 20px;
             font-size: 28px;
@@ -27,41 +27,25 @@
             margin-right: 15px;
         }
         nav {
-            background: #5a4630;
+            background: #333;
             padding: 15px;
             display: flex;
             justify-content: center;
             gap: 20px;
         }
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: white;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-        }
-        .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
+        nav a {
+            color: white;
             text-decoration: none;
-            display: block;
-        }
-        .dropdown:hover .dropdown-content {
-            display: block;
+            font-size: 18px;
         }
         section {
             padding: 50px;
-            border-bottom: 2px solid #8B5A2B;
+            border-bottom: 2px solid #ff8c00;
         }
         .btn {
             display: inline-block;
             padding: 10px 20px;
-            background: #8B5A2B;
+            background: #ff4500;
             color: white;
             text-decoration: none;
             border-radius: 5px;
@@ -72,21 +56,22 @@
             margin: 0 auto;
             border-collapse: collapse;
             background: white;
+            color: black;
         }
         .services th, .services td {
             border: 1px solid #ddd;
             padding: 15px;
         }
         footer {
-            background: #8B5A2B;
+            background: #ff4500;
             color: white;
             padding: 20px;
             margin-top: 20px;
         }
-        .social-links a {
-            margin: 0 10px;
-            font-size: 20px;
-            text-decoration: none;
+        .gaming-section {
+            background: url('https://via.placeholder.com/1500x500/000000/FFFFFF?text=Gaming+Setup') no-repeat center center/cover;
+            padding: 100px 20px;
+            color: white;
         }
         .social-links img {
             width: 30px;
@@ -113,12 +98,11 @@
         <h1>Présentation de Léo Le Cam</h1>
         <img src="https://via.placeholder.com/600x300?text=Technicien+Informatique" alt="Technicien informatique">
         <p>💻 Technicien en Informatique à Domicile | Le Mans</p>
-        <p>Passionné par l'informatique et fort d'une solide expérience, je vous propose mes services pour répondre à tous vos besoins informatiques, que ce soit à domicile, à distance ou sur site.</p>
+        <p>Passionné par l'informatique et fort d'une solide expérience, je vous propose mes services pour répondre à tous vos besoins informatiques.</p>
     </section>
     
     <section id="services" class="services">
         <h1>🔧 Services Proposés</h1>
-        <img src="https://via.placeholder.com/600x300?text=Services+Informatiques" alt="Services informatiques">
         <table>
             <tr>
                 <th>Service</th>
@@ -135,18 +119,13 @@
                 <td>Windows, macOS, logiciels, imprimantes</td>
                 <td>À partir de 40€</td>
             </tr>
-            <tr>
-                <td>Maintenance & Optimisation</td>
-                <td>Amélioration des performances, nettoyage de virus</td>
-                <td>À partir de 35€</td>
-            </tr>
         </table>
     </section>
     
-    <section id="jeux">
+    <section id="jeux" class="gaming-section">
         <h1>🎮 Informatique pour les jeux</h1>
         <p>Installation et optimisation de jeux PC, configuration des performances et mise à jour des pilotes.</p>
-        <img src="https://via.placeholder.com/600x300?text=Gaming+PC" alt="PC Gaming">
+        <img src="https://via.placeholder.com/600x300?text=PC+Gaming" alt="PC Gaming">
     </section>
     
     <section id="contact">
